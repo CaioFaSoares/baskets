@@ -26,9 +26,9 @@
 		D69266A528FA346B00191E0C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266A428FA346B00191E0C /* UIView.swift */; };
 		D69266A728FA390F00191E0C /* comHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266A628FA390F00191E0C /* comHeader.swift */; };
 		D69266A928FA3F2900191E0C /* comStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266A828FA3F2900191E0C /* comStack.swift */; };
-		D69266AF28FD804F00191E0C /* comCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266AE28FD804F00191E0C /* comCollection.swift */; };
 		D69266B128FD8C5600191E0C /* mockupBaskets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266B028FD8C5600191E0C /* mockupBaskets.swift */; };
-		D69266B328FEF03700191E0C /* comCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266B228FEF03700191E0C /* comCellCollectionViewCell.swift */; };
+		D69266B528FF38EA00191E0C /* comCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266B428FF38EA00191E0C /* comCollectionCell.swift */; };
+		D69266B728FF8F7400191E0C /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266B628FF8F7400191E0C /* BasketViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +72,9 @@
 		D69266A428FA346B00191E0C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D69266A628FA390F00191E0C /* comHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comHeader.swift; sourceTree = "<group>"; };
 		D69266A828FA3F2900191E0C /* comStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comStack.swift; sourceTree = "<group>"; };
-		D69266AE28FD804F00191E0C /* comCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comCollection.swift; sourceTree = "<group>"; };
 		D69266B028FD8C5600191E0C /* mockupBaskets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockupBaskets.swift; sourceTree = "<group>"; };
-		D69266B228FEF03700191E0C /* comCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		D69266B428FF38EA00191E0C /* comCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comCollectionCell.swift; sourceTree = "<group>"; };
+		D69266B628FF8F7400191E0C /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				D692668628F9858F00191E0C /* BasketsViewController.swift */,
+				D69266B628FF8F7400191E0C /* BasketViewModel.swift */,
 			);
 			path = BasketsView;
 			sourceTree = "<group>";
@@ -231,8 +232,7 @@
 			children = (
 				D69266A628FA390F00191E0C /* comHeader.swift */,
 				D69266A828FA3F2900191E0C /* comStack.swift */,
-				D69266AE28FD804F00191E0C /* comCollection.swift */,
-				D69266B228FEF03700191E0C /* comCellCollectionViewCell.swift */,
+				D69266B428FF38EA00191E0C /* comCollectionCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -393,17 +393,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D69266B328FEF03700191E0C /* comCellCollectionViewCell.swift in Sources */,
 				D692669028F99E3E00191E0C /* CasksViewController.swift in Sources */,
 				D69266A928FA3F2900191E0C /* comStack.swift in Sources */,
 				D692668728F9858F00191E0C /* BasketsViewController.swift in Sources */,
 				D69266A528FA346B00191E0C /* UIView.swift in Sources */,
+				D69266B528FF38EA00191E0C /* comCollectionCell.swift in Sources */,
 				D69266A328FA2A4F00191E0C /* APICall.swift in Sources */,
+				D69266B728FF8F7400191E0C /* BasketViewModel.swift in Sources */,
 				D69266A728FA390F00191E0C /* comHeader.swift in Sources */,
 				D692669228F9A21900191E0C /* SyrupsViewController.swift in Sources */,
 				D692669D28F9DC2B00191E0C /* TaskModel.swift in Sources */,
 				D692668928F98CBD00191E0C /* ViewCoding.swift in Sources */,
-				D69266AF28FD804F00191E0C /* comCollection.swift in Sources */,
 				D69266B128FD8C5600191E0C /* mockupBaskets.swift in Sources */,
 				D6531FEF28F48A66001D24A5 /* ManagerViewController.swift in Sources */,
 				D6531FEB28F48A66001D24A5 /* AppDelegate.swift in Sources */,
