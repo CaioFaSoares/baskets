@@ -11,6 +11,22 @@ class comCollectionCell: UICollectionViewCell {
     
     static let identifier = "comCollectionCell"
     
+    var projectLabelTitle: String? {
+        didSet{
+            cellTitle.text = projectLabelTitle
+        }
+    }
+    var projectLabelDescription: String? {
+        didSet{
+            cellDescription.text = projectLabelDescription
+        }
+    }
+    var projectLabelColor: UIColor? {
+        didSet{
+            projectColor.backgroundColor = projectLabelColor
+        }
+    }
+    
     private let cellStack: UIView = {
         
         let stack = UIView(frame: .zero)
@@ -23,10 +39,9 @@ class comCollectionCell: UICollectionViewCell {
         
     }()
     
-    private let cellTitle: UILabel = {
+    private lazy var cellTitle: UILabel = {
         
         let label = UILabel(frame: .zero)
-        label.text = "projectName"
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 32, weight: .bold)
@@ -35,10 +50,9 @@ class comCollectionCell: UICollectionViewCell {
         
     }()
     
-    private let cellDescription: UILabel = {
+    private lazy var cellDescription: UILabel = {
         
         let label = UILabel(frame: .zero)
-        label.text = "projectDescription description description projectDescription description description projectDescription description description "
         label.numberOfLines = 4
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 17, weight: .light)
@@ -47,11 +61,23 @@ class comCollectionCell: UICollectionViewCell {
         
     }()
     
-    private let projectColor: UIView = {
+    private lazy var projectIcon: UILabel = {
+        
+        let label = UILabel(frame: .zero)
+        label.numberOfLines = 1
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 18)
+        
+        label.text = "Oi"
+        
+        return label
+        
+    }()
+    
+    private lazy var projectColor: UIView = {
         
         let block = UIView(frame: .zero)
         block.translatesAutoresizingMaskIntoConstraints = false
-        block.backgroundColor = .red
         block.layer.opacity = 0.8
         block.layer.cornerCurve = .circular
         block.layer.cornerRadius = 5
@@ -63,6 +89,7 @@ class comCollectionCell: UICollectionViewCell {
     override init(frame: CGRect) {
         
         super.init(frame: frame)
+        
         buildLayout()
         
     }
@@ -96,6 +123,8 @@ extension comCollectionCell: ViewCoding {
         cellStack.addSubview(cellTitle)
         cellStack.addSubview(cellDescription)
         
+        projectColor.addSubview(projectIcon)
+        
     }
     
     func setupConstraints() {
@@ -111,12 +140,15 @@ extension comCollectionCell: ViewCoding {
             projectColor.heightAnchor.constraint(equalToConstant: 48),
             projectColor.widthAnchor.constraint(equalToConstant: 48),
             
+            projectIcon.centerYAnchor.constraint(equalTo: projectColor.centerYAnchor),
+            projectIcon.centerXAnchor.constraint(equalTo: projectColor.centerXAnchor),
+            
             cellTitle.leadingAnchor.constraint(equalTo: projectColor.trailingAnchor, constant: 10),
             cellTitle.topAnchor.constraint(equalTo: projectColor.topAnchor),
             cellTitle.trailingAnchor.constraint(equalTo: cellStack.trailingAnchor, constant: -10),
             
             cellDescription.leadingAnchor.constraint(equalTo: cellTitle.leadingAnchor),
-            cellDescription.topAnchor.constraint(equalTo: projectColor.bottomAnchor),
+            cellDescription.topAnchor.constraint(equalTo: cellTitle.bottomAnchor),
             cellDescription.trailingAnchor.constraint(equalTo: cellStack.trailingAnchor, constant: -10),
             
         ])

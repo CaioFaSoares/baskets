@@ -28,7 +28,8 @@
 		D69266A928FA3F2900191E0C /* comStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266A828FA3F2900191E0C /* comStack.swift */; };
 		D69266B128FD8C5600191E0C /* mockupBaskets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266B028FD8C5600191E0C /* mockupBaskets.swift */; };
 		D69266B528FF38EA00191E0C /* comCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266B428FF38EA00191E0C /* comCollectionCell.swift */; };
-		D69266B728FF8F7400191E0C /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266B628FF8F7400191E0C /* BasketViewModel.swift */; };
+		D69266B728FF8F7400191E0C /* BasketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266B628FF8F7400191E0C /* BasketsViewModel.swift */; };
+		D69266B92901711400191E0C /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266B82901711400191E0C /* JSONParsing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +75,8 @@
 		D69266A828FA3F2900191E0C /* comStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comStack.swift; sourceTree = "<group>"; };
 		D69266B028FD8C5600191E0C /* mockupBaskets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockupBaskets.swift; sourceTree = "<group>"; };
 		D69266B428FF38EA00191E0C /* comCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comCollectionCell.swift; sourceTree = "<group>"; };
-		D69266B628FF8F7400191E0C /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
+		D69266B628FF8F7400191E0C /* BasketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketsViewModel.swift; sourceTree = "<group>"; };
+		D69266B82901711400191E0C /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				D692668828F98CBD00191E0C /* ViewCoding.swift */,
+				D69266B82901711400191E0C /* JSONParsing.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -197,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				D692668628F9858F00191E0C /* BasketsViewController.swift */,
-				D69266B628FF8F7400191E0C /* BasketViewModel.swift */,
+				D69266B628FF8F7400191E0C /* BasketsViewModel.swift */,
 			);
 			path = BasketsView;
 			sourceTree = "<group>";
@@ -399,13 +402,14 @@
 				D69266A528FA346B00191E0C /* UIView.swift in Sources */,
 				D69266B528FF38EA00191E0C /* comCollectionCell.swift in Sources */,
 				D69266A328FA2A4F00191E0C /* APICall.swift in Sources */,
-				D69266B728FF8F7400191E0C /* BasketViewModel.swift in Sources */,
+				D69266B728FF8F7400191E0C /* BasketsViewModel.swift in Sources */,
 				D69266A728FA390F00191E0C /* comHeader.swift in Sources */,
 				D692669228F9A21900191E0C /* SyrupsViewController.swift in Sources */,
 				D692669D28F9DC2B00191E0C /* TaskModel.swift in Sources */,
 				D692668928F98CBD00191E0C /* ViewCoding.swift in Sources */,
 				D69266B128FD8C5600191E0C /* mockupBaskets.swift in Sources */,
 				D6531FEF28F48A66001D24A5 /* ManagerViewController.swift in Sources */,
+				D69266B92901711400191E0C /* JSONParsing.swift in Sources */,
 				D6531FEB28F48A66001D24A5 /* AppDelegate.swift in Sources */,
 				D692668E28F99C7400191E0C /* UIScrollView.swift in Sources */,
 				D6531FED28F48A66001D24A5 /* SceneDelegate.swift in Sources */,

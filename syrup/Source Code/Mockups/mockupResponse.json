@@ -1,98 +1,94 @@
-
-{
-  "pantryTable": "table",
-  "basketsInThisTable": [
-    {
-      "basketID": 1,
-      "basketName": "bsk1 Name",
-      "basketDescription": "bsk1 Description",
-      "basketColor": "bsk1 Color",
-      "casksInThisBasket": [
-        {
-          "casksID": 1,
-          "casksName": "csk1 Name",
-          "casksDescription": "csk1 Description",
-          "syrupsInThisCask": [
-            {
-              "syrupID": 1,
-              "syrupName": "syp1 Name",
-              "syrupDescription": "syp1 Description",
-              "syrupState": false
-            },
-            {
-              "syrupID": 2,
-              "syrupName": "syp2 Name",
-              "syrupDescription": "syp2 Description",
-              "syrupState": false
-            }
-          ]
-        },
-        {
-          "casksID": 2,
-          "casksName": "csk2 Name",
-          "casksDescription": "csk2 Description",
-          "syrupsInThisCask": [
-            {
-              "syrupID": 3,
-              "syrupName": "syp3 Name",
-              "syrupDescription": "syp3 Description",
-              "syrupState": false
-            },
-            {
-              "syrupID": 4,
-              "syrupName": "syp4 Name",
-              "syrupDescription": "syp4 Description",
-              "syrupState": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "basketID": 2,
-      "basketName": "bsk1 Name",
-      "basketDescription": "bsk1 Description",
-      "basketColor": "bsk1 Color",
-      "casksInThisBasket": [
-        {
-          "casksID": 1,
-          "casksName": "csk1 Name",
-          "casksDescription": "csk1 Description",
-          "syrupsInThisCask": [
-            {
-              "syrupID": 1,
-              "syrupName": "syp1 Name",
-              "syrupDescription": "syp1 Description",
-              "syrupState": false
-            },
-            {
-              "syrupID": 2,
-              "syrupName": "syp2 Name",
-              "syrupDescription": "syp2 Description",
-              "syrupState": false
-            }
-          ]
-        },
-        {
-          "casksID": 2,
-          "casksName": "csk2 Name",
-          "casksDescription": "csk2 Description",
-          "syrupsInThisCask": [
-            {
-              "syrupID": 3,
-              "syrupName": "syp3 Name",
-              "syrupDescription": "syp3 Description",
-              "syrupState": false
-            },
-            {
-              "syrupID": 4,
-              "syrupName": "syp4 Name",
-              "syrupDescription": "syp4 Description",
-              "syrupState": false
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "basketID": 1,
+    "basketName": "Projetos ",
+    "basketDescription": "Magus",
+    "basketColor": "redColor",
+    "casksInThisBasket": [
+      {
+        "casksID": 1,
+        "casksName": "csk1 Name",
+        "casksDescription": "csk1 Description",
+        "syrupsInThisCask": [
+          {
+            "syrupID": 1,
+            "syrupName": "syp1 Name",
+            "syrupDescription": "syp1 Description",
+            "syrupState": false
+          },
+          {
+            "syrupID": 2,
+            "syrupName": "syp2 Name",
+            "syrupDescription": "syp2 Description",
+            "syrupState": false
+          }
+        ]
+      },
+      {
+        "casksID": 2,
+        "casksName": "csk2 Name",
+        "casksDescription": "csk2 Description",
+        "syrupsInThisCask": [
+          {
+            "syrupID": 3,
+            "syrupName": "syp3 Name",
+            "syrupDescription": "syp3 Description",
+            "syrupState": false
+          },
+          {
+            "syrupID": 4,
+            "syrupName": "syp4 Name",
+            "syrupDescription": "syp4 Description",
+            "syrupState": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "basketID": 2,
+    "basketName": "Omega",
+    "basketDescription": "Wheelus",
+    "basketColor": "cyanColor",
+    "casksInThisBasket": [
+      {
+        "casksID": 1,
+        "casksName": "csk1 Name",
+        "casksDescription": "csk1 Description",
+        "syrupsInThisCask": [
+          {
+            "syrupID": 1,
+            "syrupName": "syp1 Name",
+            "syrupDescription": "syp1 Description",
+            "syrupState": false
+          },
+          {
+            "syrupID": 2,
+            "syrupName": "syp2 Name",
+            "syrupDescription": "syp2 Description",
+            "syrupState": false
+          }
+        ]
+      },
+      {
+        "casksID": 2,
+        "casksName": "csk2 Name",
+        "casksDescription": "csk2 Description",
+        "syrupsInThisCask": [
+          {
+            "syrupID": 3,
+            "syrupName": "syp3 Name",
+            "syrupDescription": "syp3 Description",
+            "syrupState": false
+          },
+          {
+            "syrupID": 4,
+            "syrupName": "syp4 Name",
+            "syrupDescription": "syp4 Description",
+            "syrupState": false
+          }
+        ]
+      }
+    ]
+  }
+]

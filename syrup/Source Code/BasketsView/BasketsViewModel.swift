@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class BasketViewModel {
+final class BasketsViewModel {
     
 //    weak var projectsDelegate: ProjectsCollectionViewDelegate?
     
@@ -20,3 +20,5 @@ final class BasketViewModel {
     }
     
 }
+
+

@@ -11,11 +11,11 @@ import UIKit
 struct Projects: Codable, Hashable {
     
     let pantryTableID: String
-    var basketsInThisTable: [Baskets]
+    var basketsInThisTable: [Basket]
     
 }
 
-struct Baskets: Codable, Hashable {
+struct Basket: Codable, Hashable {
     
     var basketID: Int
     var basketName: String

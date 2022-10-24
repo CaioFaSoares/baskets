@@ -9,6 +9,8 @@ import UIKit
 
 class BasketsViewController: UIViewController {
     
+    var activeBaskets = [Basket]()
+    
     private let basketHeader: comHeader = {
         
         let title = comHeader(titleLabel: "Baskets", infoLabel: "Currently active baskets: x")
@@ -40,6 +42,14 @@ class BasketsViewController: UIViewController {
         super.viewDidLoad()
         
         buildLayout()
+        
+        Task {
+            
+            let res = getProjectsFromJson()
+            self.activeBaskets = res
+            collectionView.reloadData()
+            
+        }
         
     }
     
@@ -73,7 +83,6 @@ extension BasketsViewController: ViewCoding {
         collectionView.frame = .zero
         collectionView.backgroundColor = .clear
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        
         
     }
     
@@ -113,14 +122,39 @@ extension BasketsViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 2
+        print(activeBaskets.count)
+        return(activeBaskets.count)
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: comCollectionCell.identifier, for: indexPath)
-        return cell
+        if var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "comCollectionCell", for: indexPath) as? comCollectionCell {
+
+            let title       = activeBaskets[indexPath.row].basketName
+            let description = activeBaskets[indexPath.row].basketDescription
+            
+            let colorString = activeBaskets[indexPath.row].basketColor
+            let selector = Selector(colorString)
+            
+//            let color = UIColor.perform(selector).takeUnretainedValue() as? UIColor
+            let color = UIColor.value(forKey: colorString) as? UIColor
+        
+            print("Got into the custom cell stuff")
+            
+            cell.projectLabelColor          =   color
+            cell.projectLabelTitle          =   title
+            cell.projectLabelDescription    =   description
+            
+            print("Returning now the custom cell")
+            
+            return cell
+            
+        }
+        
+        let defaultCell = UICollectionViewCell()
+        defaultCell.backgroundColor = .red
+        return defaultCell
         
     }
     
@@ -138,9 +172,9 @@ extension BasketsViewController: UICollectionViewDelegateFlowLayout {
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-
+        
         return UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
-
+        
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -169,4 +203,43 @@ extension BasketsViewController: UICollectionViewDelegateFlowLayout {
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Tapped cell at: \(indexPath.section) : \(indexPath.row)")
+    }
+    
 }
+
+extension BasketsViewController: JSONProcessing {
+    
+    func getProjectsFromJson() -> [Basket] {
+        
+        guard let path = Bundle.main.path(forResource: "mockupResponse", ofType: "json") else {
+            
+            print("Could get that JSON file...")
+            return []
+            
+        }
+        
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            
+            let data = try Data(contentsOf: url)
+            let _ = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+            
+            let decodedFetching = try JSONDecoder().decode([Basket].self, from: data)
+            print("Managed to fetch the data from the local JSON file")
+            return decodedFetching
+            
+        } catch {
+            
+            print(error)
+            
+        }
+        
+        return []
+        
+    }
+    
+}
+
