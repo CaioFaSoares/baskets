@@ -15,12 +15,15 @@
 		D653200528F48A68001D24A5 /* syrupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653200428F48A68001D24A5 /* syrupTests.swift */; };
 		D653200F28F48A68001D24A5 /* syrupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653200E28F48A68001D24A5 /* syrupUITests.swift */; };
 		D653201128F48A68001D24A5 /* syrupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653201028F48A68001D24A5 /* syrupUITestsLaunchTests.swift */; };
+		D67D1828290804C6007C6A0A /* Syrup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D1827290804C6007C6A0A /* Syrup.swift */; };
+		D67D182A290804DE007C6A0A /* Cask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D1829290804DE007C6A0A /* Cask.swift */; };
+		D67D182C2908050E007C6A0A /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D182B2908050E007C6A0A /* Basket.swift */; };
 		D692668728F9858F00191E0C /* BasketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692668628F9858F00191E0C /* BasketsViewController.swift */; };
 		D692668928F98CBD00191E0C /* ViewCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692668828F98CBD00191E0C /* ViewCoding.swift */; };
 		D692668E28F99C7400191E0C /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692668D28F99C7400191E0C /* UIScrollView.swift */; };
 		D692669028F99E3E00191E0C /* CasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692668F28F99E3E00191E0C /* CasksViewController.swift */; };
 		D692669228F9A21900191E0C /* SyrupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692669128F9A21900191E0C /* SyrupsViewController.swift */; };
-		D692669D28F9DC2B00191E0C /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692669C28F9DC2B00191E0C /* TaskModel.swift */; };
+		D692669D28F9DC2B00191E0C /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692669C28F9DC2B00191E0C /* Project.swift */; };
 		D69266A028FA27FB00191E0C /* mockupResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D692669F28FA27FB00191E0C /* mockupResponse.json */; };
 		D69266A328FA2A4F00191E0C /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266A228FA2A4F00191E0C /* APICall.swift */; };
 		D69266A528FA346B00191E0C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69266A428FA346B00191E0C /* UIView.swift */; };
@@ -62,12 +65,15 @@
 		D653200A28F48A68001D24A5 /* syrupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = syrupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D653200E28F48A68001D24A5 /* syrupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syrupUITests.swift; sourceTree = "<group>"; };
 		D653201028F48A68001D24A5 /* syrupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syrupUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D67D1827290804C6007C6A0A /* Syrup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syrup.swift; sourceTree = "<group>"; };
+		D67D1829290804DE007C6A0A /* Cask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cask.swift; sourceTree = "<group>"; };
+		D67D182B2908050E007C6A0A /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		D692668628F9858F00191E0C /* BasketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketsViewController.swift; sourceTree = "<group>"; };
 		D692668828F98CBD00191E0C /* ViewCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoding.swift; sourceTree = "<group>"; };
 		D692668D28F99C7400191E0C /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		D692668F28F99E3E00191E0C /* CasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasksViewController.swift; sourceTree = "<group>"; };
 		D692669128F9A21900191E0C /* SyrupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyrupsViewController.swift; sourceTree = "<group>"; };
-		D692669C28F9DC2B00191E0C /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		D692669C28F9DC2B00191E0C /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		D692669F28FA27FB00191E0C /* mockupResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockupResponse.json; sourceTree = "<group>"; };
 		D69266A228FA2A4F00191E0C /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		D69266A428FA346B00191E0C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -243,7 +249,10 @@
 		D692669A28F9DC0D00191E0C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D692669C28F9DC2B00191E0C /* TaskModel.swift */,
+				D692669C28F9DC2B00191E0C /* Project.swift */,
+				D67D182B2908050E007C6A0A /* Basket.swift */,
+				D67D1829290804DE007C6A0A /* Cask.swift */,
+				D67D1827290804C6007C6A0A /* Syrup.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -404,8 +413,10 @@
 				D69266A328FA2A4F00191E0C /* APICall.swift in Sources */,
 				D69266B728FF8F7400191E0C /* BasketsViewModel.swift in Sources */,
 				D69266A728FA390F00191E0C /* comHeader.swift in Sources */,
+				D67D182A290804DE007C6A0A /* Cask.swift in Sources */,
+				D67D182C2908050E007C6A0A /* Basket.swift in Sources */,
 				D692669228F9A21900191E0C /* SyrupsViewController.swift in Sources */,
-				D692669D28F9DC2B00191E0C /* TaskModel.swift in Sources */,
+				D692669D28F9DC2B00191E0C /* Project.swift in Sources */,
 				D692668928F98CBD00191E0C /* ViewCoding.swift in Sources */,
 				D69266B128FD8C5600191E0C /* mockupBaskets.swift in Sources */,
 				D6531FEF28F48A66001D24A5 /* ManagerViewController.swift in Sources */,
@@ -413,6 +424,7 @@
 				D6531FEB28F48A66001D24A5 /* AppDelegate.swift in Sources */,
 				D692668E28F99C7400191E0C /* UIScrollView.swift in Sources */,
 				D6531FED28F48A66001D24A5 /* SceneDelegate.swift in Sources */,
+				D67D1828290804C6007C6A0A /* Syrup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

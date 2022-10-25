@@ -135,7 +135,7 @@ extension BasketsViewController: UICollectionViewDataSource {
             let description = activeBaskets[indexPath.row].basketDescription
             
             let colorString = activeBaskets[indexPath.row].basketColor
-            let selector = Selector(colorString)
+//            let selector = Selector(colorString)
             
 //            let color = UIColor.perform(selector).takeUnretainedValue() as? UIColor
             let color = UIColor.value(forKey: colorString) as? UIColor
